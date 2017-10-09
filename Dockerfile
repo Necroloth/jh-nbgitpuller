@@ -11,6 +11,8 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
      ${NB_USER}
     
+WORKDIR ${HOME}
+
 # Move over things like requirements.txt we'll use later on..
 COPY . .
 
