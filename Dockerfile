@@ -9,8 +9,7 @@ ENV HOME /home/${NB_USER}
 RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
-    --gid ${NB_GID} \
-    ${NB_USER}
+     ${NB_USER}
     
 # Move over things like requirements.txt we'll use later on..
 COPY . .
